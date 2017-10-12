@@ -1,0 +1,10 @@
+{% macro render_form(field) %}
+	<div class ="row control-group">
+					<div class="form-group col-xs-4 floating-label-form-group controls">
+
+    <td> {{ field.label }}  
+    <dd> {{ field(**kwargs) }}
+
+    </div>
+			    </div>
+{% endmacro %}
